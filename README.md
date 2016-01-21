@@ -1,5 +1,6 @@
-[![build status](https://secure.travis-ci.org/flpms/google-locations-es6.png)](http://travis-ci.org/flpms/google-locations-es6)
 # Google Locations - ES6
+
+[![build status](https://secure.travis-ci.org/flpms/google-locations-es6.png)](http://travis-ci.org/flpms/google-locations-es6)
 
 This is a fork from a another fork. If you want know the original go to this [node-google-places](https://www.npmjs.org/package/google-places) and/or if you want a no ES6 version go to [google-locations](https://www.npmjs.org/package/google-locations).
 
