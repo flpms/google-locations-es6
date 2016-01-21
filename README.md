@@ -1,16 +1,18 @@
-[![build status](https://secure.travis-ci.org/eastbayjake/google-locations.png)](http://travis-ci.org/eastbayjake/google-locations)
-# google-locations
+[![build status](https://secure.travis-ci.org/flpms/google-locations-es6.png)](http://travis-ci.org/flpms/google-locations-es6)
+# Google Locations - ES6
+
+This is a fork from a another fork. If you want know the original go to this [node-google-places](https://www.npmjs.org/package/google-places) and/or if you want a no ES6 version go to [google-locations](https://www.npmjs.org/package/google-locations).
+
+REMEMBER: This is a ES6 version, in futher maybe I add other functions which made different from the original fork, for now this package only work with Node 4.
 
 Google Places + Google Geocoding API module for [node.js](http://nodejs.org). Supports basic functions on the Google Places API -- search, autocomplete, and details -- as well as geocoding and reverse geocoding capabilities with the Google Geocoding API. It also contains two convenience methods, searchByAddress and searchByPhone, that allow users to retrieve Place details by address or phone number.
 
 This module requires a valid Google API key and enabled access for Google Places and/or Google Geocoding. Check out the [Google Places API docs](http://code.google.com/apis/maps/documentation/places/) or [Google Geocoding API docs](http://code.google.com/apis/maps/documentation/geocode/) for more information. Please note that searchByAddress uses the Geocoding API and searchByPhone uses the /place/textsearch endpoint which counts as 10 requests toward your daily quota.
 
-This is a fork of the [node-google-places](https://www.npmjs.org/package/google-places) module which appears to no longer be actively maintained. Please feel free to submit pull requests for features and additional test coverage!
-
 ## Install
 
 ```
-npm install google-locations
+npm install google-locations --save
 ```
 
 ## Methods
@@ -82,3 +84,10 @@ locations.searchByPhone({phone: "(650) 253-0000"}, maxResults: 2, function(err, 
 To test simply install development dependencies and run:
 
 ```vows test/* --spec```
+
+## Planned for future versions
+
+* Configurable URI;
+* Change tests to Mocha;
+* Change callback to promises;
+* Add more features, if you want a feature, let we know by sending a PR or put in [Issues;](https://github.com/flpms/google-locations-ES)
