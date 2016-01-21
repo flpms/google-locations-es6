@@ -1,11 +1,37 @@
 {
-  "name": "google-locations",
+  "name": "google-locations-es6",
   "description": "Google Places API for Node.js, with convenience methods to search by address or phone number",
-  "version": "0.2.0",
+  "version": "0.0.1",
   "license": "MIT",
-  "homepage": "http://github.com/eastbayjake/google-locations",
-  "author": "Jake McGuire <mcguireghs@gmail.com>",
-  "contributors": [],
+  "homepage": "http://github.com/flpms/google-locations-es6",
+  "author": {
+    "name": "Filipe M. Silva",
+    "email": "filipe.silva@local1202.com",
+    "url": "http://local1202.com"
+  },
+  "contributors": [
+    {
+      "name": "Jake McGuire",
+      "email": "<mcguireghs@gmail.com>"
+    },
+    {
+      "name": "Mark Headd",
+      "email": "mheadd@gmail.com"
+    },
+    {
+      "name": "Brian Romanko",
+      "url": "bromanko.com"
+    },
+    {
+      "name": "Marcin Wiśniowski",
+      "email": "shfx@shfx.pl",
+      "url": "http:shfx.pl"
+    },
+    {
+      "name": "Jay Powers",
+      "url": "http://github.com/jpowers"
+    }
+  ],
   "scripts": {
     "test": "node ./test/index.test.js"
   },
@@ -19,6 +45,9 @@
   "devDependencies": {
     "vows": "^0.8.1",
     "node-fakeweb": "^0.0.20"
+  },
+  "engine": {
+    "node": ">=4.0.0"
   },
   "main": "./lib/google-locations.js"
 }
