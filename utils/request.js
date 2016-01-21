@@ -1,8 +1,11 @@
 'use strict';
+const https = require('https');
+const url = require('url');
+const _ = require('underscore');
 
 let request = {
-    makeRequest(request_query, cb) {
-        https.get(request_query, (res) => {
+    makeRequest(requestQuery, cb) {
+        https.get(requestQuery, (res) => {
             let data = [];
 
             res.on('data', chunk => data.push(chunk)).on('end', () => {
@@ -21,10 +24,9 @@ let request = {
 
         }).on('error', e => cb(e));
     },
+    getURL(context, query, type, method) {
 
-    generateUrl(context, query, type, method) {
-
-        query.filter(item => item ? item : '');
+        _.compact(query);
 
         query.key = context.config.key;
 
@@ -37,7 +39,7 @@ let request = {
 
         requestQuery.headers = context.config.headers;
 
-        return request_query;
+        return requestQuery;
     }
 }
 
