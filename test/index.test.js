@@ -86,7 +86,7 @@ vows.describe('Places Search').addBatch({
     'should not have an error': function(err, response){
       assert.isNull(err);
     },
-    
+
     'should be status OK': function(err, response){
       assert.equal(response.status, 'OK');
     },
@@ -127,7 +127,7 @@ vows.describe('Places Autocomplete').addBatch({
     'should not have an error': function(err, response){
       assert.isNull(err);
     },
-    
+
     'should be status OK': function(err, response){
       // console.log(response); process.exit();
       assert.equal(response.status, 'OK');
@@ -186,8 +186,13 @@ vows.describe('Reverse Geocode').addBatch({
 
 vows.describe('Search by Address').addBatch({
   'get details from address/name query': {
-    topic: function(){
-      new GoogleLocations('fake_key').searchByAddress({address: '1600 Amphitheatre Pkwy, Mountain View, CA', name: 'Goo'}, this.callback);
+    topic: function() {
+      var google = new GoogleLocations('fake_key');
+
+      google.searchByAddress({
+          address: '1600 Amphitheatre Pkwy, Mountain View, CA',
+          name: 'Goo'
+      }, this.callback);
     },
     'should get a location': function(err, response){
       assert.equal(response.details[0].result.name, 'Google');
