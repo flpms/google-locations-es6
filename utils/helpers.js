@@ -45,7 +45,7 @@ let helper = {
                 }
             };
 
-        let keys = ['name', 'maxResults', 'rankby', 'radius'];
+        let keys = ['name', 'maxResults', 'rankby', 'radius', 'types'];
 
         for (i = 0; i < keys.length; i++) {
             var key = keys[i];
