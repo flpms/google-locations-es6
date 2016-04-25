@@ -68,6 +68,7 @@ let helper = {
             rankby: searchOptions.rankby
         };
 
+        if (searchOptions.types) query.types = searchOptions.types;
         if (searchOptions.name) query.name = searchOptions.name;
         if (searchOptions.radius) query.radius = searchOptions.radius;
 
