@@ -6,7 +6,7 @@
   "homepage": "http://github.com/flpms/google-locations-es6",
   "author": {
     "name": "Filipe M. Silva",
-    "email": "filipe.silva@local1202.com",
+    "email": "filipe@local1202.com",
     "url": "http://local1202.com"
   },
   "contributors": [
@@ -43,8 +43,10 @@
     "underscore": "^1.8.3"
   },
   "devDependencies": {
-    "vows": "^0.8.1",
-    "node-fakeweb": "^0.0.20"
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5",
+    "node-fakeweb": "^0.0.20",
+    "vows": "^0.8.1"
   },
   "engine": {
     "node": ">=4.0.0"
